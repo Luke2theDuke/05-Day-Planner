@@ -68,3 +68,20 @@ $(document).ready(function () {
 });
 
 storageData();
+
+
+
+function clearClick(storageData) {
+    $(".clearBtn").on("click", function () {
+        localStorage.clear();
+        $("#nine").find("textarea").text("")
+        $("#ten").find("textarea").text("")
+        $("#eleven").find("textarea").text("")
+        $("#twelve").find("textarea").text("")
+        $("#one").find("textarea").text("")
+        $("#two").find("textarea").text("")
+        $("#three").find("textarea").text("")
+        $("#four").find("textarea").text("")
+        $("#five").find("textarea").text("")
+    });
+}

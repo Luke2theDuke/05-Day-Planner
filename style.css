@@ -89,3 +89,25 @@ textarea {
   font-size: 40px;
   transition: all .3s ease-in-out;
 }
+
+.clearBtn {
+  border-radius: 15px;
+  background-color: #ff6961;
+  font-size: 28px;
+  color: #fff;
+  padding: 15px 25px 15px 25px;
+}
+
+.clearBtn:hover {
+  border-radius: 15px;
+  background-color: #c1433c;
+  font-size: 28px;
+  color: #fff;
+  padding: 15px 25px 15px 25px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+}
