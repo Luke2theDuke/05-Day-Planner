@@ -32,3 +32,23 @@ function rowStyle() {
 rowStyle();
 
 $(".time-block").each(rowStyle);
+
+
+// LOCAL STORAGE STUFF
+
+// Function that sets up variables for the values of the text area input boxes and makes the values persistent on page reload
+function storageData() {
+    const nine = localStorage.getItem("nine");
+
+}
+
+// Function that stores the key and value into local storage on save button click
+$(document).ready(function () {
+    $(".saveBtn").on("click", function () {
+        const value = $(this).siblings(".time-block").val();
+        const time = $(this).parent().attr("id");
+        localStorage.setItem(time, value);
+    });
+});
+
+storageData();
