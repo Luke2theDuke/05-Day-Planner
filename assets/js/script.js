@@ -85,3 +85,5 @@ function clearClick(storageData) {
         $("#five").find("textarea").text("")
     });
 }
+
+clearClick();
