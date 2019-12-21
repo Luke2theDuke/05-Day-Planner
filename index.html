@@ -17,117 +17,172 @@
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
-    <div id="displayJsDate"></div>
+    <!-- container for Moment.js output -->
+    <p class="lead" id="displayMoment"></p>
+
 
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">9:00 AM</div>
+    <!-- 9 AM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>9 AM</p>
+        </div>
       </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputNine" class="to-do-input"></textarea>
+        </div>
       </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
-      </div>
-    </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">10:00 AM</div>
-      </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
-      </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveNine">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">11:00 AM</div>
+    <!-- 10 AM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>10 AM</p>
+        </div>
       </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputTen" class="to-do-input"></textarea>
+        </div>
       </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
-      </div>
-    </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">12:00 PM</div>
-      </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
-      </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveTen">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">1:00 PM</div>
+    <!-- 11 AM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>11 AM</p>
+        </div>
       </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputEleven" class="to-do-input"></textarea>
+        </div>
       </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
-      </div>
-    </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">2:00 PM</div>
-      </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
-      </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveEleven">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">3:00 PM</div>
+    <!-- 12 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>12 PM</p>
+        </div>
       </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputTwelve" class="to-do-input"></textarea>
+        </div>
       </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
-      </div>
-    </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">4:00 PM</div>
-      </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
-      </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveTwelve">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div class="col col-md-2">
-        <div class="hour">5:00 PM</div>
+    <!-- 1 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>1 PM</p>
+        </div>
       </div>
-      <div class="col col-md-8">
-        <div class="time-block">Schedule To Do Goes Here.</div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputOne" class="to-do-input"></textarea>
+        </div>
       </div>
-      <div class="col col-md-2">
-        <div class="saveBtn"><i class="fas fa-save"></i></div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveOne">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+    </div>
+    <!-- 2 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>2 PM</p>
+        </div>
+      </div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputTwo" class="to-do-input"></textarea>
+        </div>
+      </div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveTwo">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+    </div>
+    <!-- 3 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>3 PM</p>
+        </div>
+      </div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputThree" class="to-do-input"></textarea>
+        </div>
+      </div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveThree">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+    </div>
+    <!-- 4 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>4 PM</p>
+        </div>
+      </div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputFour" class="to-do-input"></textarea>
+        </div>
+      </div>
+      <div class="col col-md-1 col-sm-12">
+        <button class="saveBtn" id="saveFour">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+    </div>
+    <!-- 5 PM Timeblock -->
+    <div class="row">
+      <div class="col col-md-1 col-sm-12">
+        <div class="hour">
+          <p>5 PM</p>
+        </div>
+      </div>
+      <div class="col col-md-10 col-sm-12">
+        <div class="time-block">
+          <textarea id="inputFive" class="to-do-input"></textarea>
+        </div>
+      </div>
+      <div class="col col-md-1 col-sm-12">
+        <button class=" saveBtn" id="saveFive">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
 
